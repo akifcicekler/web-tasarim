@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>XMLHttpRequest Kullanımı</h2>
+
+<div id="demo">
+<p>AJAX bu metni değiştirsin.</p>
+<button type="button" onclick="loadDoc()">İçeriği Değiştir</button>
+</div>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+    if (this.readyState == 4 && this.status == 404) {
+      document.getElementById("demo").innerHTML = "<p>Dosya bulunamadı!</p>";
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt");
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>

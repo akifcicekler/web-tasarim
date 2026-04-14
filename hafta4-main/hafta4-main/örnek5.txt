@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>XMLHttpRequest POST İsteği</h2>
+<button type="button" onclick="loadDoc()">Veri Gönder</button>
+
+<p id="demo"></p>
+ 
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState === 4 && this.status === 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  }
+  xhttp.open("POST", "demo_post2.asp");
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("isim=Ahmet&soyisim=Yılmaz&yas=25");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>XMLHttpRequest Başlık Bilgileri</h2>
+<p>getAllResponseHeaders() metodu sunucu yanıt başlıklarını gösterir:</p>
+
+<pre id="demo"></pre>
+
+<script>
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+  document.getElementById("demo").innerHTML =
+  "HTTP Yanıt Başlıkları:\n" + this.getAllResponseHeaders();
+}
+xhttp.open("GET", "ajax_info.txt");
+xhttp.send();
+</script>
+
+</body>
+</html>

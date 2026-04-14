@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<h2>XMLHttpRequest Müşteri Bilgileri</h2>
+
+<form action=""> 
+  <select name="customers" onchange="showCustomer(this.value)">
+    <option value="">Bir müşteri seçiniz:</option>
+    <option value="ALFKI">Alfreds Futterkiste</option>
+    <option value="NORTS">North/South</option>
+    <option value="WOLZA">Wolski Zajazd</option>
+  </select>
+</form>
+<br>
+<div id="txtHint">Müşteri detayları burada görünecek...</div>
+
+<script>
+function showHint(str) {
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "Bekleniyor...";
+    return;
+  }
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("txtHint").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "oneriler.php?ad="+str);
+  xhttp.send();
+}
+</script></body>
+</html>

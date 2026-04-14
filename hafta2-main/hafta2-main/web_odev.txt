@@ -1,0 +1,42 @@
+Web 1.0, Web 2.0 ve Web 3.0 Nedir?
+İnternetin gelişim süreci farklı evrelere ayrılarak incelenir. Bu evreler Web 1.0, Web 2.0 ve Web 3.0 olarak adlandırılır. Her bir dönem, teknolojik gelişmelerin yanı sıra kullanıcıların internet üzerindeki rolünü de kökten değiştirmiştir. Aşağıda bu üç dönemi bilgisayar mühendisliği bakış açısıyla detaylı bir şekilde inceleyeceğiz.
+
+1. Web 1.0 (1990’lar – 2004 civarı)
+Web 1.0, genellikle 'sadece okunabilen web' (read-only web) olarak tanımlanır. Bu dönemde internet siteleri statik yapıdaydı. İçerikler HTML ile hazırlanıyor ve kullanıcıya sunuluyordu, ancak kullanıcı bu içerikler üzerinde herhangi bir değişiklik yapamıyordu. Sunucu taraflı dinamik içerik üretimi yoktu. Kullanıcılar yalnızca verileni tüketiyordu.
+Özellikleri:
+- Statik HTML sayfalar kullanıldı.
+- Kullanıcı etkileşimi minimum seviyedeydi.
+- İçerik sadece site sahipleri tarafından güncellenebiliyordu.
+- Arama motorları sınırlı ve temel düzeydeydi.
+- Kullanıcı geri bildirimi, yorum veya etkileşim imkânı bulunmuyordu.
+Örnekler: İlk kişisel bloglar, Netscape, Yahoo! gibi portallar.
+Benzetme: Web 1.0, bir kütüphane gibidir. Raflardan kitap alıp okuyabilirsiniz, ancak içeriğe katkıda bulunamazsınız.
+
+2. Web 2.0 (2004 – Günümüzün büyük kısmı)
+Web 2.0 dönemi 'okuma + yazma webi' (read-write web) olarak tanımlanır. Bu dönemde dinamik web teknolojileri (örneğin AJAX, JavaScript, sunucu taraflı diller ve veritabanları) yaygınlaştı ve kullanıcılar internetin sadece tüketicisi değil aynı zamanda üreticisi haline geldi.
+Özellikleri:
+- Dinamik web siteleri ve uygulamalar ortaya çıktı.
+- Kullanıcılar içerik üretmeye başladı (bloglar, videolar, sosyal medya paylaşımları).
+- Etkileşim arttı: yorum yapma, beğenme, paylaşma gibi aktiviteler yaygınlaştı.
+- Büyük şirketler (Google, Meta, Amazon vb.) interneti merkezileştirdi ve kullanıcı verilerini topladı.
+- Reklamcılık, kişiselleştirilmiş içerik ve algoritmalar önem kazandı.
+Örnekler: Facebook, YouTube, Instagram, TikTok.
+Benzetme: Web 2.0, devasa bir sosyal kafe gibidir. Herkes konuşabilir, paylaşabilir; ancak kafenin sahibi sohbetlerinizi kaydedip size reklam satabilir.
+
+3. Web 3.0 (Gelişmekte Olan Dönem – Blokzincir Çağı)
+Web 3.0, 'okuma + yazma + sahip olma webi' (read-write-own web) olarak adlandırılır. Bu dönem henüz tam olarak oturmamış, gelişim aşamasında olan bir süreçtir. Web 3.0’ın temelinde blokzincir teknolojisi, merkeziyetsizlik ve kullanıcı verilerinin kontrolünün bireyin kendisine ait olması yer alır.
+Özellikleri:
+- Merkeziyetsiz yapılar: Veriler tek bir şirketin kontrolünde değil, blokzincir üzerinde dağınık şekilde tutulur.
+- Kullanıcı kimliği ve verileri kişinin kontrolünde olur.
+- Akıllı kontratlar sayesinde aracısız işlemler yapılabilir.
+- NFT ve kripto para gibi dijital sahiplik mekanizmaları ortaya çıkar.
+- DAO’lar (Decentralized Autonomous Organizations) ile topluluk temelli yönetimler gelişir.
+Örnekler: Ethereum, Decentraland, OpenSea, MetaMask.
+Benzetme: Web 3.0, ortak bir köy pazarı gibidir. Pazarı kimse tek başına yönetmez, herkes ürününü koyabilir ve sahipliği blokzincir tarafından garanti edilir.
+
+4. Karşılaştırmalı Özet Tablo
+Özellik	Web 1.0	Web 2.0	Web 3.0
+Dönem	1990–2004	2004–Günümüz	2020+ (gelişmekte)
+Kullanıcı Rolü	Okur	Okur + Yazar	Okur + Yazar + Sahip
+Teknoloji	Statik HTML	Dinamik JS + Veritabanı	Blockchain + Akıllı Kontrat
+Kontrol	Site sahibi	Büyük şirketler	Merkeziyetsiz / Kullanıcı

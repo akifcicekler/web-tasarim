@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Türk Bayrağı İmleci</title>
+  <style>
+    
+    body {
+      height: 100vh;
+      margin: 0;
+      background-color: #222;
+      cursor: none;
+      box-sizing: border-box;
+    }
+
+   
+    .cursor-dot {
+      width: 5px;
+      height: 5px;
+      background-color: red;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    
+    .cursor-border {
+      width: 60px;
+      height: 60px;
+      background-color: red;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      pointer-events: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9998;
+    }
+
+  
+    .cursor-border::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50%;
+      left: 10px;
+      top: 15px;
+    }
+
+    .cursor-border::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      left: 17px;
+      top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- İmleç elemanları -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-border"></div>
+
+  <!-- JS: İmleci hareket ettirme -->
+  <script>
+    const dot = document.querySelector('.cursor-dot');
+    const border = document.querySelector('.cursor-border');
+
+    window.addEventListener('mousemove', e => {
+      const { clientX, clientY } = e;
+
+      dot.style.top = clientY + 'px';
+      dot.style.left = clientX + 'px';
+
+      border.style.top = clientY + 'px';
+      border.style.left = clientX + 'px';
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>XMLHttpRequest Kullanımı</h2>
+<button type="button" onclick="loadDoc()">Veri İste</button>
+<p id="demo"></p>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  }
+  xhttp.onerror = function() {
+    document.getElementById("demo").innerHTML = "İstek başarısız oldu!";
+  }
+  xhttp.open("GET", "demo_get.asp?t=123");
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>

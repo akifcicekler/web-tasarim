@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>XMLHttpRequest Kullanımı</h2>
+
+<p id="demo">AJAX bu metni değiştirecek.</p>
+
+<button type="button" onclick="loadDoc()">İçeriği Değiştir</button>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "data.txt", true);
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML = xhttp.responseText;
+  }
+  xhttp.send();
+}
+</script>
+</body>
+</html>
